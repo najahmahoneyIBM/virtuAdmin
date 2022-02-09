@@ -9,7 +9,7 @@ pipeline{
         }
         stage('Test'){
             steps {
-                sh 'yarn test --watchAll-false'
+                sh 'npm test --watchAll-false'
             }
         }
         stage('Deploy'){
