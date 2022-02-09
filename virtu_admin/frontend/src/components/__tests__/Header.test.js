@@ -8,7 +8,7 @@ import { render, screen } from '@testing-library/react';
 test("renders title", () =>{
     render(
     <Provider store={store}>
-        <Headers />
+        <Header />
     </Provider>
     );
     const linkElement = screen.getByText(/My Profile/i);
