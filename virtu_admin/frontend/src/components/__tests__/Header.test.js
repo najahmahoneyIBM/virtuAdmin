@@ -1,24 +1,16 @@
 import React from 'react';
-import {shallow, configure} from 'enzyme';
 import Header from '../Header';
-import Adapter from 'enzyme-adapter-react-16';
+import { Provider } from 'react-redux';
+import { store } from '../../store';
+import configureStore from 'redux-mock-store';
+import { render, screen } from '@testing-library/react';
 
-configure({adapter: new Adapter()});
-
-describe("Header", function(){
-    let mountedHeader;
-    beforeEach(()=>{
-        mountedHeader = shallow(<Header />);
-    });
-
-it('render without crashing', function() {
-    const mountedHeader = shallow(<Header />);
-    expect(mountedHeader.length).toBeGreaterThan(0);
+test("renders title", () =>{
+    render(
+    <Provider store={store}>
+        <Headers />
+    </Provider>
+    );
+    const linkElement = screen.getByText(/My Profile/i);
+    expect(linkElement).toBeInTheDocument();
 });
-
-/*it('renders a string', function() {
-    const quote = mountQuote.find('h2').text();
-    expect(quote.length).toBeGreaterThan(0);
-}); */
-
-})
