@@ -35,7 +35,7 @@ function LoginScreen({ history }) {
         {loading && <Loading />}
         <Form onSubmit={submitHandler}>
           <Form.Group controlId="formBasicEmail">
-            <Form.Label>E-Mail Address</Form.Label>
+            <Form.Label>Email address</Form.Label>
             <Form.Control
               type="email"
               value={email}
@@ -55,7 +55,7 @@ function LoginScreen({ history }) {
           </Form.Group>
 
           <Button variant="primary" type="submit">
-            Submit Here
+            Submit
           </Button>
         </Form>
         <Row className="py-3">
