@@ -1,0 +1,25 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Installing Node 16.13.2...
+      - curl -fsSL https://deb.nodesource.com/setup_16.x | -E bash -
+      - apt install -y nodejs
+      - echo Installing npm...
+      - apt install --no-install-recommends yarn
+  pre_build:
+    commands:
+      - echo Installing dependencies...
+      - npm
+  build:
+    commands:
+      - echo Testing...
+      - yarn test
+      - echo Building...
+      - yarn build
+artifacts:
+  files:
+    - "**/*"
+  discard-paths: no
+  base-directory: dist

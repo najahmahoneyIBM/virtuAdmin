@@ -16,15 +16,20 @@
   "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "chai": "^4.3.6",
     "colors": "^1.4.0",
     "dotenv": "^8.6.0",
     "express": "^4.17.2",
     "express-async-handler": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.13.14"
+    "mocha": "^9.2.0",
+    "mongoose": "^5.13.14",
+    "redux-mock-store": "^1.5.4"
   },
   "devDependencies": {
     "concurrently": "^5.3.0",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
     "nodemon": "^2.0.15"
   }
 }
