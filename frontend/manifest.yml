@@ -1,0 +1,4 @@
+apps:
+- name: virtu-admin
+  random-route: true
+  memory: 128M
