@@ -1,5 +1,5 @@
 {
-  "name": "Virtu Admin",
+  "name": "virtu-admin",
   "version": "1.0.0",
   "description": "Admin App",
   "main": "server.js",
