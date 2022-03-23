@@ -20,13 +20,13 @@ function LandingPage({ history }) {
         <Row>
           <div className="intro-text">
             <div>
-              <h1 className="title">Virtu Admin</h1>
+              <h1 className="title">Virtu Admin App</h1>
               <h2 className="subtitle"></h2>
             </div>
             <div className="buttonContainer">
               <Link to="/login">
                 <Button size="lg" className="landingbutton">
-                  Login Button
+                  Login
                 </Button>
               </Link>
               <Link to="/register">
