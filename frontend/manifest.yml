@@ -1,4 +1,7 @@
-apps:
-- name: virtu-admin
-  random-route: true
-  memory: 128M
+applications:
+  - name: virtu-admin
+memory: 64M
+path: build/
+buildpack: staticfile_buildpack
+routes:
+  -route: najahmahoneyapp.mybluemix.net
