@@ -26,7 +26,7 @@ function LandingPage({ history }) {
             <div className="buttonContainer">
               <Link to="/login">
                 <Button size="lg" className="landingbutton">
-                  Login
+                  Login Button
                 </Button>
               </Link>
               <Link to="/register">
