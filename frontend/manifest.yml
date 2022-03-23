@@ -5,3 +5,5 @@ path: build/
 buildpack: staticfile_buildpack
 routes:
   - route: najahmahoneyapp.mybluemix.net
+  - route: najahmahoney.virtuadmin.com
+  - route: https://virtu-admin.us-south.cf.appdomain.cloud
