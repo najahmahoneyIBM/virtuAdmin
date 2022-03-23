@@ -4,4 +4,4 @@ memory: 64M
 path: build/
 buildpack: staticfile_buildpack
 routes:
-  -route: najahmahoneyapp.mybluemix.net
+  - route: najahmahoneyapp.mybluemix.net
